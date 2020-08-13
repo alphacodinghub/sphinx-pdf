@@ -1,4 +1,4 @@
-FROM python:3.8.2-slim-buster
+FROM python:3.8.5-slim-buster
 LABEL maintainer="AlphaCodingHub <AlphaCodingHub@outlook.com>"
 
 WORKDIR /docs
@@ -21,7 +21,7 @@ RUN apt-get update \
      texlive-xetex \
      \
      && python3 -m pip install -U pip \
-     && python3 -m pip install Sphinx==3.1.0 \
+     && python3 -m pip install Sphinx==3.2.0 \
      Pillow \
      guzzle_sphinx_theme   \
      livereload   \
