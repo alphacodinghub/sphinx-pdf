@@ -4,6 +4,7 @@ LABEL maintainer="AlphaCodingHub <AlphaCodingHub@outlook.com>"
 WORKDIR /docs
 RUN apt-get update \
      && apt-get install -y \
+     iproute2 \
      graphviz \
      imagemagick \
      make \
